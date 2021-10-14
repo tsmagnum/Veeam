@@ -30,7 +30,7 @@ $emailSubject = "WARINING - Veeam encryption password modified or created!"
 #endregion
 
 $timeFrame = (Get-Date).AddHours(-6)
-$messages = Get-WinEvent -FilterHashtable @{Logname="Veeam Backup"; ID='31700','31600'; StartTime=$timeFrame}
+$messages = Get-WinEvent -FilterHashtable @{Logname="Veeam Backup"; ID='31700','31600','31800'; StartTime=$timeFrame}
 
 $emailBody = ""
 
