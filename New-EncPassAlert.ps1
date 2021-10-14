@@ -21,11 +21,11 @@ $emailPass = "yourSmtpPassword"
 $emailFrom = "sender@domain.com"
 #insert one ore more recipient, enclosed in "", comma separated
 $emailToAddresses = @("recipient@domain.com") 
-$emailSubject = "WARINING - Veeam encryption password modified!"
+$emailSubject = "WARINING - Veeam encryption password modified or created!"
 #endregion
 
 $timeFrame = (Get-Date).AddHours(-6)
-$messages = Get-WinEvent -FilterHashtable @{Logname="Veeam Backup"; ID='31700'; StartTime=$timeFrame}
+$messages = Get-WinEvent -FilterHashtable @{Logname="Veeam Backup"; ID='31700','31600'; StartTime=$timeFrame}
 
 $emailBody = ""
 
