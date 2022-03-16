@@ -23,7 +23,7 @@ to connect to the SMTP server (variable $secretEmailName). You can easily get th
 
 Author: Federico Lillacci - Coesione Srl - https://github.com/tsmagnum
 
-Link - https://github.com/tsmagnum/Veeam/blob/main/New-EncPassAlert.ps1
+Link - https://github.com/tsmagnum/Veeam/blob/main/Get-VBREncrPassStatus.ps1
 #>
 
 #TLS Settings required
