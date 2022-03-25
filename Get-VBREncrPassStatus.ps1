@@ -15,7 +15,7 @@ alphanumeric Id.
 
 .NOTES
 A Microsoft Secret Store Vault is required to store and retrieve safely the credentials: please read this article to configure
-the vault https://adamtheautomator.com/powershell-encrypt-password/ . The $vaultPass variables has to be set to the full path 
+the vault https://adamtheautomator.com/powershell-encrypt-password/ . The $vaultPass variable has to be set to the full path 
 to the XML Secret Store Master Password. 
 The vault should contain the credentials to access the Veeam API server (variable $secretApiName) and the credentials required 
 to connect to the SMTP server (variable $secretEmailName). You can easily get this values using the 'Get-SecretInfo' cmdlet, 
