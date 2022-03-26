@@ -2,7 +2,7 @@
 .SYNOPSIS
 This scripts creates a report containing the Encryption Passwords used in Veeam Backup & Replication and their age in days
 (from the last modification), to quickly check if someone modified them in the previous days. 
-The script can be scheduled and configure to send an email.
+The script can be scheduled and configured to send an email.
 
 .DESCRIPTION
 This scripts creates a report containing the Encryption Passwords used in Veeam Backup & Replication and their age in days, 
